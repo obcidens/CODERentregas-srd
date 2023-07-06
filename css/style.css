@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap');
+body{
+    background-color: rgb(228, 222, 222);
+}
 /* PAGINA PRINCIPAL */
 header{
     background-image: url(../img/FONDOheader.jpg);
-    background-size: cover;
+    /* background-size: cover; */
     width: 100%;
     height: 550px;
     margin: 0;
@@ -14,6 +17,15 @@ header{
 .headerTitulo{
     padding: 0;
     margin: 50px;
+}
+.titulo{
+    font-size: 100px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    
+}
+.textoTitulo{
+    font-size: 30px;
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 .LOGO{
     float: left;
@@ -48,7 +60,6 @@ header{
 
 /* PAGINAS SECUNDARIAS */
 header2{
-    background-image: url(../img/FONDOheader.jpg);
     width: 100%;
     height: 550px;
     margin: 0;
@@ -57,25 +68,31 @@ header2{
     grid-template-columns: 100%;
     grid-template-rows: 100px 450px;
 }
-.titulo{
-    font-size: 100px;
-    font-family: 'Ysabeau Infant', sans-serif;
-    
-}
-.textoTitulo{
-    font-size: 30px;
-    font-family: 'Ysabeau Infant', sans-serif;
-}
-.menu{
-    position: fixed;
-}
-.MENU{
-    display: flex;
-    background-color: rgb(7, 255, 172);
-    height: 50px;
-    width: 100%;
+.LOGO{
+    float: left;
+    background-color: rgb(19, 14, 14);
+    height: 100px;
+    width: 100px;
     padding: 20px;
+    margin: 20px;
+}
+.navbar-header {
+    background-color: transparent !important;
+    display: flex;
+    width: 100%;
+    text-align: right;
+    }
+.ulnavbar{
+    margin: 0;
+    width: 950px;
+    height: 20px;
+}
+.nav-link{
+    font-family: 'Ysabeau Infant', sans-serif;
+    display: inline-block;
     
+    padding: 20px;
+    font-size: 20px;
 }
 
 
