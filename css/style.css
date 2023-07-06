@@ -2,6 +2,7 @@
 /* PAGINA PRINCIPAL */
 header{
     background-image: url(../img/FONDOheader.jpg);
+    background-size: cover;
     width: 100%;
     height: 550px;
     margin: 0;
@@ -10,23 +11,37 @@ header{
     grid-template-columns: 100%;
     grid-template-rows: 100px 450px;
 }
-.titulo{
-    font-size: 100px;
-    font-family: 'Ysabeau Infant', sans-serif;
-    
+.headerTitulo{
+    padding: 0;
+    margin: 50px;
 }
-.textoTitulo{
-    font-size: 30px;
-    font-family: 'Ysabeau Infant', sans-serif;
+.LOGO{
+    float: left;
+    background-color: rgb(19, 14, 14);
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 20px;
 }
-.MENU{
+.navbar-header {
+    background-color: transparent !important;
     display: flex;
-    background-color: rgb(7, 255, 172);
-    height: 50px;
     width: 100%;
-    padding: 10px;
-    
+    text-align: right;
+    }
+.ulnavbar{
+    margin: 0;
+    width: 950px;
+    height: 20px;
 }
+.nav-link{
+    font-family: 'Ysabeau Infant', sans-serif;
+    display: inline-block;
+    
+    padding: 20px;
+    font-size: 20px;
+}
+/* cards */
 
 
 
@@ -61,4 +76,25 @@ header2{
     width: 100%;
     padding: 20px;
     
+}
+
+
+/* @MEDIA QUERIES */
+@media screen and (max-width: 700px){
+    .headerTitulo{
+        height: 350px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .titulo{
+        font-size: 80px;
+        margin: 10px;
+
+    }
+    .textoTitulo{
+        font-size: 30px;
+    }
+
 }
