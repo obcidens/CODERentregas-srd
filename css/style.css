@@ -94,24 +94,75 @@ header2{
     padding: 20px;
     font-size: 20px;
 }
-
+/* cards */
+#cards1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 0 15px rgb(24, 22, 22);
+    background-color: rgb(197, 93, 93);
+}
+.cards div{
+    text-align: center;
+    font-size: 14px;
+    background-color: blueviolet;
+}
+.cards h2{
+    text-align: center;
+    background-color: brown;
+}
 
 /* @MEDIA QUERIES */
 @media screen and (max-width: 700px){
+    header {
+        background-image: url(../img/FONDOheader.jpg);
+        background-size: 700px;
+    }
     .headerTitulo{
         height: 350px;
         width: 100%;
         padding: 0;
         margin: 0;
-        
     }
     .titulo{
         font-size: 80px;
         margin: 10px;
-
+    }
+    .container-header {
+        width: 100%;
     }
     .textoTitulo{
         font-size: 30px;
+    }
+    #navbarHeader{
+        display: none;
+    }
+    .buttonMenu{
+        display: contents;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 0;
+        border-radius:60px;
+    }
+    .svg{
+        width: 60px;
+        height: 60px;
+    }
+    #cards1{
+        width: 100%;
+        height: 50em;
+        margin: 5px;
+        padding: 5px;
+        box-shadow: 0 0 15px rgb (17, 17, 17);
+        display: flex;
+        
+    }
+    .cards{
+        background-color: rgb(29, 0, 110);
     }
     
 }
