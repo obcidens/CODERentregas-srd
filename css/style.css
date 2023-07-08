@@ -27,6 +27,15 @@ header{
     grid-template-columns: 100%;
     grid-template-rows: 100px 450px;
 }
+.navbar-header {
+    
+    display: flex;
+    width: 100%;
+    text-align: right;
+}
+.navbarHeader{
+background-color: #9fa9a3;
+}
 .headerTitulo{
     padding: 0;
     margin: 50px;
@@ -45,12 +54,6 @@ header{
     padding: 20px;
     margin: 20px;
 }
-.navbar-header {
-    background-color: #9fa9a3;
-    display: flex;
-    width: 100%;
-    text-align: right;
-    }
 .ulnavbar{
     margin: 0;
     width: 950px;
@@ -63,7 +66,6 @@ header{
 }
 /* cards */
 #cards1{
-    
     display: grid;
     grid-template-columns: 5fr 5fr;
     grid-template-rows: 340px 340px;
@@ -76,7 +78,7 @@ header{
 }
 .card-body{
     width: 100%;
-    height: 150px;
+    height: 220px;
     margin: 10px;
     padding: 0px;  
 }
@@ -93,7 +95,6 @@ header{
     height: 250px;
     padding: 0;
     margin: 0;
-    display: flex;
     flex-direction: row;
 } 
 .cards{
@@ -140,7 +141,7 @@ header2{
     display: flex;
     width: 100%;
     text-align: right;
-    }
+}
 .ulnavbar{
     margin: 0;
     width: 950px;
@@ -158,6 +159,9 @@ header2{
     header {
         background-image: url(../img/FONDOheader.jpg);
         background-size: 700px;
+    }
+    main{
+        height: auto;
     }
     .headerTitulo{
         height: 350px;
@@ -187,29 +191,29 @@ header2{
         border-radius:60px;
     }
     .svg{
-        display: contents;
         width: 60px;
         height: 60px;
     }
     #cards1{
         width: 100%;
         height: 200px;
-        
-        box-shadow: 0 0 15px rgb (17, 17, 17);
         display: flex;
-        flex-wrap: wrap;
-    }
-    .card2{
+        flex-direction: column;
+        box-shadow: 0 0 15px rgb (17, 17, 17);
         
     }
     .card-body{
-        flex-wrap: wrap;
         padding: 5px;
         flex-direction: row;
         margin: 5px;
     }
     .button{ 
-    background-color: red;
+    background-color: rgb(107, 141, 99);
     }
-    
+    footer{
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+    }
 }
