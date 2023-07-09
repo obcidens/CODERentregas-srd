@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap');
 /* Color Palette 
 HEX: #f0f0f0  fondo
-HEX: #c5d5c5
+HEX: #c5d5c5   git check
 HEX: #9fa9a3  cards
 HEX: #e3e0cc   buttons
 */
@@ -156,7 +156,7 @@ header2{
     font-size: 20px;
 }
 /* @MEDIA QUERIES */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
     header {
         background-image: url(../img/FONDOheader.jpg);
         background-size: auto;
