@@ -160,7 +160,7 @@ header2{
 @media screen and (max-width: 700px){
     header {
         background-image: url(../img/FONDOheader.jpg);
-        background-size: 700px;
+        background-size: auto;
     }
     main{
         height: auto;
