@@ -10,12 +10,7 @@ body{
     font-family: 'Ysabeau Infant', sans-serif;
 }
 /* PAGINA PRINCIPAL */
-footer{
-    background-color: #516b51;
-    width: 100%;
-    height: 300px;
-    margin: 0;
-}
+/* HEADER */
 header{
     background-image: url(../img/FONDOheader.jpg);
     /* background-img; */
@@ -27,14 +22,14 @@ header{
     grid-template-columns: 100%;
     grid-template-rows: 100px 450px;
 }
+.container-header{
+    background-color: #9fa9a3;
+    width: 100%;
+}
 .navbar-header {
-    
     display: flex;
     width: 100%;
     text-align: right;
-}
-.navbarHeader{
-background-color: #9fa9a3;
 }
 .headerTitulo{
     padding: 0;
@@ -48,28 +43,43 @@ background-color: #9fa9a3;
 }
 .LOGO{
     float: left;
-    background-color: rgb(19, 14, 14);
+    background-color: rgb(116, 150, 118);
     height: 100px;
     width: 100px;
-    padding: 20px;
+    padding: 0;
     margin: 20px;
 }
+.buttonMenu{
+    display: none;
+}
 .ulnavbar{
-    margin: 0;
-    width: 950px;
-    height: 20px;
+    height: 100px;
+    justify-content: end;
+    align-items: end;
+    
 }
 .nav-link{
-    display: inline-block;
-    padding: 20px;
+    display: inline;
     font-size: 20px;
 }
-/* cards */
+.nav-link a{
+    margin: 7px;
+    padding: 20px;
+}
+.divp{
+    width: 100%;
+    height: 30px;
+    padding: 30px;
+    margin: 10px;
+    font-size: 25px;
+}
+/* MAIN cards */
 #cards1{
     display: grid;
     grid-template-columns: 5fr 5fr;
-    grid-template-rows: 340px 340px;
+    grid-template-rows: 360px 360px;
     padding: 0;
+    box-sizing: content-box;
 }
 .card2{
     background-color: #9fa9a3;
@@ -78,7 +88,7 @@ background-color: #9fa9a3;
 }
 .card-body{
     width: 100%;
-    height: 220px;
+    height: 250px;
     margin: 10px;
     padding: 0px; 
     
@@ -87,15 +97,17 @@ background-color: #9fa9a3;
     float: left;
     width: 170px;
     height: 170px;
+    margin: 10px;
 }
 .title{
     width: 100%;
     font-size: 20px;
+    height: 25px;
 }
 .card-Texto{
-    height: 250px;
-    padding: 0;
-    margin: 0;
+    height: 200px;
+    padding: 10PX;
+    margin: 0%;
     flex-direction: row;
     font-size: 20px;
 } 
@@ -117,6 +129,28 @@ background-color: #9fa9a3;
     width: 100%;
     height: 50px;
 }
+/* FOOTER */
+footer{
+    background-color: #00ff00;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    
+}
+.infoFooter{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 147, 15);
+    align-items: center;
+    justify-content: center;
+}
+.infoFooter h1{
+    font-size: 30px;
+}
+.infoFooter p{
+    font-size: 30px;
+}
 
 /* PAGINAS SECUNDARIAS */
 header2{
@@ -124,11 +158,8 @@ header2{
     height: 550px;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 450px;
 }
-.LOGO{
+/* .LOGO{
     float: left;
     background-color: #e3e0cc;
     height: 60px;
@@ -138,26 +169,25 @@ header2{
     align-content: center;
     justify-content: center;
 }
-.navbar-header {
-    background-color: #9fa9a3;
-    display: flex;
-    width: 100%;
-    text-align: right;
+.buttonMenu{
+    display: none;
 }
 .ulnavbar{
     margin: 0;
-    width: 950px;
-    height: 20px;
+    width: 100%;
+    height: 100px;
 }
 .nav-link{
-    display: inline-block;
-    background-color: #e3e0cc;
-    padding: 20px;
+    display: inline;
+    justify-content: end;
+    align-items: end;
+    margin: 10px;
+    padding: 0px;
     font-size: 20px;
-}
+} */
 /* @MEDIA QUERIES */
-@media screen and (max-width: 900px){
-    header {
+@media screen and (max-width: 800px){
+    header{
         background-image: url(../img/FONDOheader.jpg);
         background-size: auto;
     }
@@ -182,16 +212,16 @@ header2{
     }
     #navbarHeader{
         display: none;
+        width: 100%;
     }
     .buttonMenu{
         display: contents;
         width: 100px;
         height: 100px;
-        margin: 10px;
-        padding: 0;
-        border-radius:60px;
     }
     .svg{
+        margin: 20px;
+        padding: 0;
         width: 60px;
         height: 60px;
     }
@@ -214,7 +244,5 @@ header2{
     footer{
         width: 100%;
         height: 200px;
-        align-items: center;
-        justify-content: center;
     }
 }
