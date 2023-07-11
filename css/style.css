@@ -9,6 +9,28 @@ body{
     background-color:#f0f0f0;
     font-family: 'Ysabeau Infant', sans-serif;
 }
+/* GO-TOP */
+.container-gotop{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+.button-GOTOP{
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #dbd191;
+    width: 100px;
+    height: 100px;
+}
+.button-GOTOP a{
+    color: black;
+}
+.GOTOP-sunrise-fill{
+    width: 70px;
+    height: 70px;
+}
 /* PAGINA PRINCIPAL */
 /* HEADER */
 header{
@@ -147,35 +169,9 @@ main{
     width: 100%;
     height: 50px;
 }
-/* FOOTER */
-footer{
-    background-image: url(../img/FOOTER.jpg);
-    background-size: 100%;
-    display: flex;
-    height: 450px;
-    margin: 0;
-    padding: 0;
-}
-.imgFooter{
-    background-size: cover;
-    height: 330px;
-    width: 330px;
-    padding: 3px;
-}
-.infoFooter{
-    flex-direction: row;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0px;
-    font-size: 20px;
-    color: #ffffff;
-}
-
 /* PAGINAS SECUNDARIAS */
 #header2{
-    height: 150px;
+    height: 100px;
     margin: 0;
     padding: 0;
 }
@@ -203,7 +199,31 @@ footer{
     text-align: center;
     margin: 0%;
 }
-
+/* FOOTER */
+footer{
+    background-image: url(../img/FOOTER.jpg);
+    background-size: 100%;
+    display: flex;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+}
+.imgFooter{
+    background-size: cover;
+    height: 330px;
+    width: 330px;
+    padding: 3px;
+}
+.infoFooter{
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0px;
+    font-size: 20px;
+    color: #ffffff;
+}
 /* @MEDIA QUERIES */
 @media screen and (max-width: 800px){
     header{
