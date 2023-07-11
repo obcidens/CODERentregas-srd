@@ -2,7 +2,7 @@
 /* Color Palette 
 HEX: #f0f0f0  fondo
 HEX: #c5d5c5   git check
-HEX: #9fa9a3  cards
+HEX: #9fa9a3  cards navbar
 HEX: #e3e0cc   buttons
 */
 body{
@@ -18,17 +18,16 @@ header{
     height: 550px;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 450px;
+    
 }
 .container-header{
-    background-color: #9fa9a3;
+    /* background-color: #9fa9a3; */
     width: 100%;
 }
 .navbar-header {
     display: flex;
     width: 100%;
+    height: 100px;
     text-align: right;
 }
 .headerTitulo{
@@ -43,34 +42,36 @@ header{
 }
 .LOGO{
     float: left;
-    background-color: rgb(116, 150, 118);
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     padding: 0;
-    margin: 20px;
+    margin: 10px 10px 10px 15px;
 }
 .buttonMenu{
     display: none;
 }
 .ulnavbar{
-    height: 100px;
+    height: 90px;
     justify-content: end;
     align-items: end;
-    
 }
 .nav-link{
     display: inline;
-    font-size: 20px;
+    height: 40px;
 }
 .nav-link a{
-    margin: 7px;
-    padding: 20px;
+    text-decoration: none;
+    background-color: #809c8c;
+    font-size: 20px;
+    margin: 7px 7px 7px 7px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
 }
 .divp{
     width: 100%;
-    height: 30px;
-    padding: 30px;
-    margin: 10px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
     font-size: 25px;
 }
 /* MAIN cards */
@@ -117,7 +118,6 @@ header{
     align-content: center;
     justify-content: center;
 }
-
 .card-bodylink{
     align-items: center;
     justify-content: center;
@@ -131,65 +131,70 @@ header{
 }
 /* FOOTER */
 footer{
-    background-color: #00ff00;
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    
-}
-.infoFooter{
-    height: 250px;
-    width: 100%;
+    background-image: url(../img/FOOTER.jpg);
+    background-size: 100%;
     display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 147, 15);
-    align-items: center;
-    justify-content: center;
-}
-.infoFooter h1{
-    font-size: 30px;
-}
-.infoFooter p{
-    font-size: 30px;
-}
-
-/* PAGINAS SECUNDARIAS */
-header2{
-    width: 100%;
-    height: 550px;
+    height: 450px;
     margin: 0;
     padding: 0;
 }
-/* .LOGO{
-    float: left;
-    background-color: #e3e0cc;
-    height: 60px;
-    width: 70px;
-    padding: 50px;
-    margin: 20px;
-    align-content: center;
-    justify-content: center;
+.imgFooter{
+    background-size: cover;
+    height: 330px;
+    width: 330px;
+    padding: 3px;
+}
+.infoFooter{
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0px;
+    font-size: 20px;
+    color: #ffffff;
+}
+ 
+/* PAGINAS SECUNDARIAS */
+#header2{
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.headerSecundario{
+    background-color:#f0f0f0;
+    width: 100%;
+    height: 100px;
+    
 }
 .buttonMenu{
     display: none;
 }
-.ulnavbar{
-    margin: 0;
-    width: 100%;
-    height: 100px;
+
+/* arboles */
+.textoCompletoArboles{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
-.nav-link{
-    display: inline;
-    justify-content: end;
-    align-items: end;
-    margin: 10px;
-    padding: 0px;
-    font-size: 20px;
-} */
+.tituloPAG2{
+    background-image: url(../img/FONDOarbol.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 490px;
+    font-size: 50px;
+}
 /* @MEDIA QUERIES */
 @media screen and (max-width: 800px){
     header{
         background-image: url(../img/FONDOheader.jpg);
         background-size: auto;
+    }
+    #header2{
+        width: 100%;
     }
     main{
         height: auto;
@@ -218,6 +223,8 @@ header2{
         display: contents;
         width: 100px;
         height: 100px;
+        justify-content: end;
+        align-items: end;
     }
     .svg{
         margin: 20px;
@@ -243,6 +250,14 @@ header2{
     }
     footer{
         width: 100%;
-        height: 200px;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+    .imgFooter{
+        height: 50px;
+        width: 50px;
+        padding: 3px;
+        
     }
 }
