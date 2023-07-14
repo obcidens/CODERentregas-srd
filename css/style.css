@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap");
-/* Color Palette */
-/* HEX: #f0f0f0  fondo */
-/* HEX: #c5d5c5   git check */
-/* HEX: #9fa9a3  cards navbar */
-/* HEX: #e3e0cc   buttons */
+/*valores*/
 body {
-  background-color: #f0f0f0;
+  background-color: #c7e7f5;
   font-family: "Ysabeau Infant", sans-serif;
 }
 
@@ -15,22 +11,18 @@ body {
   height: 100px;
   display: flex;
 }
-
-.button-GOTOP {
+.container-gotop .button-GOTOP {
   justify-content: center;
   align-items: center;
   border: none;
   border-radius: 50%;
-  background-color: #dbd191;
+  background-color: #79bbca;
   width: 100px;
   height: 100px;
 }
-.button-GOTOP a {
+.container-gotop .button-GOTOP a {
   color: black;
-}
-
-.GOTOP-sunrise-fill {
-  width: 70px;
+  width: 80px;
   height: 70px;
 }
 
@@ -38,14 +30,11 @@ body {
 /* HEADER */
 header {
   background-image: url(../img/FONDOheader.jpg);
+  background-size: cover;
   width: 100%;
   height: 550px;
   margin: 0;
   padding: 0;
-}
-
-.container-header {
-  width: 100%;
 }
 
 .navbar-header {
@@ -55,17 +44,8 @@ header {
   text-align: right;
 }
 
-.headerTitulo {
-  padding: 0;
-  margin: 50px;
-}
-
-.titulo {
-  font-size: 100px;
-}
-
-.textoTitulo {
-  font-size: 30px;
+.container-header {
+  width: 100%;
 }
 
 .LOGO {
@@ -76,27 +56,37 @@ header {
   margin: 10px 10px 0 15px;
 }
 
-.buttonMenu {
-  display: none;
-}
-
 .ulnavbar {
   height: 90px;
   justify-content: end;
   align-items: end;
 }
-
-.nav-link {
+.ulnavbar .nav-link {
   display: inline;
   height: 40px;
 }
-.nav-link a {
+.ulnavbar .nav-link a {
   text-decoration: none;
-  background-color: #809c8c;
   font-size: 20px;
   margin: 7px 7px 7px 7px;
   padding: 20px 20px 20px 20px;
   border-radius: 10px;
+}
+
+.buttonMenu {
+  display: none;
+}
+
+.headerTitulo {
+  padding: 0;
+  margin: 50px;
+  color: black;
+}
+.headerTitulo .titulo {
+  font-size: 100px;
+}
+.headerTitulo .textoTitulo {
+  font-size: 30px;
 }
 
 .divp {
@@ -107,7 +97,72 @@ header {
   font-size: 25px;
 }
 
-/* config texto completo */
+/* MAIN cards */
+#cards1 {
+  display: grid;
+  grid-template-columns: 570px 570px;
+  grid-template-rows: 500px 500px;
+  padding: 0;
+  margin: 0;
+}
+
+.card2 {
+  margin: 10px;
+  padding: 0px;
+  height: 500px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.card2 a {
+  text-decoration: none;
+}
+
+.card-body {
+  width: 500px;
+  height: 420px;
+  margin: 9px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #6faece;
+  color: black;
+}
+
+.card-img {
+  width: 260px;
+  height: 200px;
+  margin: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-image: url(../img/FONDOheader.jpg);
+  background-size: 100%;
+  display: flex;
+  height: 410px;
+  margin: 0;
+  padding: 0;
+}
+
+.imgFooter {
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  padding: 3px;
+}
+
+.infoFooter {
+  color: black;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px;
+  font-size: 30px;
+}
+
+/* config texto completo pag2 */
 main {
   font-size: 25px;
   display: flex;
@@ -128,69 +183,6 @@ main {
   margin-bottom: 0;
 }
 
-/* MAIN cards */
-#cards1 {
-  display: grid;
-  grid-template-columns: 5fr 5fr;
-  grid-template-rows: 360px 360px;
-  padding: 0;
-  box-sizing: content-box;
-}
-
-.card2 {
-  background-color: #9fa9a3;
-  margin: 10px;
-  padding: 20px;
-}
-
-.card-body {
-  width: 100%;
-  height: 250px;
-  margin: 10px;
-  padding: 0px;
-}
-
-.card-img {
-  float: left;
-  width: 170px;
-  height: 170px;
-  margin: 10px;
-}
-
-.title {
-  width: 100%;
-  font-size: 20px;
-  height: 25px;
-}
-
-.card-Texto {
-  height: 200px;
-  padding: 10PX;
-  margin: 0%;
-  flex-direction: row;
-  font-size: 20px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-}
-
-.card-bodylink {
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.button {
-  background-color: #809c8c;
-  border: none;
-  width: 100%;
-  height: 50px;
-}
-
 /* PAGINAS SECUNDARIAS */
 #header2 {
   height: 100px;
@@ -199,7 +191,7 @@ main {
 }
 
 .headerSecundario {
-  background-color: #f0f0f0;
+  background-color: #8dd4fd;
   width: 100%;
   height: 100px;
 }
@@ -227,44 +219,11 @@ main {
   margin: 0%;
 }
 
-/* FOOTER */
-footer {
-  background-color: #e2dfdf;
-  background-size: 100%;
-  display: flex;
-  height: 450px;
-  margin: 0;
-  padding: 0;
-}
-
-.imgFooter {
-  background-size: cover;
-  height: 330px;
-  width: 330px;
-  padding: 3px;
-}
-
-.infoFooter {
-  flex-direction: row;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 30px;
-  font-size: 20px;
-}
-
-/* @MEDIA QUERIES */
-@media screen and (max-width: 800px) {
+/* @MEDIA QUERY 900*/
+@media screen and (max-width: 900px) {
   header {
     background-image: url(../img/FONDOheader.jpg);
-    background-size: auto;
-  }
-  #header2 {
     width: 100%;
-  }
-  main {
-    height: auto;
   }
   .headerTitulo {
     height: 350px;
@@ -272,17 +231,17 @@ footer {
     padding: 0;
     margin: 0;
   }
-  .titulo {
-    font-size: 80px;
+  .headerTitulo .titulo {
+    font-size: 60px;
     margin: 10px;
+  }
+  .headerTitulo .textoTitulo {
+    font-size: 30px;
   }
   .container-header {
     width: 100%;
   }
-  .textoTitulo {
-    font-size: 30px;
-  }
-  #navbarHeader {
+  .container-header #navbarHeader {
     display: none;
     width: 100%;
   }
@@ -293,7 +252,7 @@ footer {
     justify-content: end;
     align-items: end;
   }
-  .svg {
+  .buttonMenu .svg {
     margin: 20px;
     padding: 0;
     width: 60px;
@@ -301,24 +260,65 @@ footer {
   }
   #cards1 {
     width: 100%;
-    height: 200px;
+    height: 2000px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 15px rgb(17, 17, 17);
+  }
+  .card-body {
+    width: 100%;
+    height: 420px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .card-body .button {
+    background-color: rgb(100, 100, 194);
+  }
+  footer {
+    height: 370px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .imgFooter {
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+  }
+}
+/* @MEDIA QUERY 450*/
+@media screen and (max-width: 450px) {
+  header {
+    background-image: url(../img/FONDOheader.jpg);
+    width: 100%;
+    height: 250px;
+  }
+  .headerTitulo {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .headerTitulo .titulo {
+    font-size: 45px;
+    margin: 5px;
+  }
+  .headerTitulo .textoTitulo {
+    font-size: 20px;
   }
   .card-body {
     padding: 5px;
     flex-direction: row;
-    margin: 5px;
-  }
-  .button {
-    background-color: rgb(107, 141, 99);
+    margin: 0;
+    width: 100%;
   }
   footer {
+    height: 430px;
     width: 100%;
-    background-size: cover;
-    padding: 0;
+    padding: 5px;
     margin: 0;
+  }
+  footer .infoFooter {
+    font-size: 16px;
   }
   .imgFooter {
     height: 50px;
