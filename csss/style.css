@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap");
+/*valores*/
+body {
+  background-color: #c7e7f5;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+/* GO-TOP */
+.container-gotop {
+  width: 100px;
+  height: 100px;
+  display: flex;
+}
+.container-gotop .button-GOTOP {
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #79bbca;
+  width: 100px;
+  height: 100px;
+}
+.container-gotop .button-GOTOP a {
+  color: black;
+  width: 100px;
+  height: 100px;
+}
+
+/* PAGINA PRINCIPAL */
+/* HEADER */
+header {
+  background-image: url(../img/FONDOheader.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  text-align: right;
+}
+
+.container-header {
+  width: 100%;
+}
+
+.LOGO {
+  float: left;
+  height: 100px;
+  width: 100px;
+  padding: 0;
+  margin: 10px 10px 0 15px;
+}
+
+.ulnavbar {
+  height: 90px;
+  justify-content: end;
+  align-items: end;
+}
+.ulnavbar .nav-link {
+  display: inline;
+  height: 40px;
+}
+.ulnavbar .nav-link a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 7px 7px 7px 7px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.buttonMenu {
+  display: none;
+}
+
+.headerTitulo {
+  padding: 0;
+  margin: 50px;
+  color: black;
+}
+.headerTitulo .titulo {
+  font-size: 100px;
+}
+.headerTitulo .textoTitulo {
+  font-size: 30px;
+}
+
+.divp {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+
+/* MAIN cards */
+/* FOOTER */
+footer {
+  background-image: url(../img/FONDOheader.jpg);
+  background-size: 100%;
+  display: flex;
+  height: 410px;
+  margin: 0;
+  padding: 0;
+}
+
+.imgFooter {
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  padding: 3px;
+}
+
+.infoFooter {
+  color: black;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px;
+  font-size: 30px;
+}
+
+/* config texto completo pag2 */
+main {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textoCompleto {
+  padding: 100px;
+}
+.textoCompleto ul {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.tituloCompleto p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* PAGINAS SECUNDARIAS */
+#header2 {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.headerSecundario {
+  background-color: #8dd4fd;
+  width: 100%;
+  height: 100px;
+}
+
+.buttonMenu {
+  display: none;
+}
+
+.h1-IMGpag2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondoHeader2 {
+  width: 700px;
+  height: 500px;
+  justify-content: center;
+}
+
+.tituloPAG2 {
+  font-size: 90px;
+  text-align: center;
+  margin: 0%;
+}
+
+/* @MEDIA QUERY 900*/
+@media screen and (max-width: 900px) {
+  header {
+    background-image: url(../img/FONDOheader.jpg);
+    width: 100%;
+  }
+  .headerTitulo {
+    height: 350px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .headerTitulo .titulo {
+    font-size: 60px;
+    margin: 10px;
+  }
+  .headerTitulo .textoTitulo {
+    font-size: 30px;
+  }
+  .container-header {
+    width: 100%;
+  }
+  .container-header #navbarHeader {
+    display: none;
+    width: 100%;
+  }
+  .buttonMenu {
+    display: contents;
+    width: 100px;
+    height: 100px;
+    justify-content: end;
+    align-items: end;
+  }
+  .buttonMenu .svg {
+    margin: 20px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+  }
+  #cards1 {
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body {
+    width: 100%;
+    height: 420px;
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .card-body .button {
+    background-color: rgb(100, 100, 194);
+  }
+  footer {
+    height: 370px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .imgFooter {
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+  }
+}
+/* @MEDIA QUERY 450*/
+@media screen and (max-width: 450px) {
+  header {
+    background-image: url(../img/FONDOheader.jpg);
+    width: 100%;
+    height: 270px;
+  }
+  .headerTitulo {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .headerTitulo .titulo {
+    font-size: 45px;
+    margin: 5px;
+  }
+  .headerTitulo .textoTitulo {
+    font-size: 20px;
+  }
+  .card-body {
+    padding: 5px;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+  }
+  footer {
+    height: 430px;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+  }
+  footer .infoFooter {
+    font-size: 16px;
+  }
+  .imgFooter {
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

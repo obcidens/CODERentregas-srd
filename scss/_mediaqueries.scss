@@ -1,0 +1,110 @@
+/* @MEDIA QUERY 900*/
+@media screen and (max-width: 900px) {
+    header {
+        background-image: url(../img/FONDOheader.jpg);
+        width: 100%;
+    }
+    .headerTitulo {
+        height: 330px;
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        .titulo {
+            font-size: 90px;
+            
+            justify-content: center;
+        }
+        .textoTitulo {
+            font-size: 30px;
+        }
+    } 
+    .container-header {
+        width: 100%;
+        #navbarHeader {
+            display: none;
+            width: 100%;
+        }
+    }
+    .buttonMenu {
+        display: contents;
+        width: 100px;
+        height: 100px;
+        justify-content: end;
+        align-items: end;
+        .svg {
+            margin: 20px;
+            padding: 0;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    #cards1 {
+        width: 100%;
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-body {
+        width: 100%;
+        height: 420px;
+        margin: 0; 
+        padding: 5px;
+        font-size: 25px;
+            .button {
+                background-color: rgb(100, 100, 194);
+            }
+    }
+    footer {
+        height: 370px;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .imgFooter {
+        height: 50px;
+        width: 50px;
+        padding: 3px;
+    }
+}
+/* @MEDIA QUERY 450*/
+@media screen and (max-width: 450px) {
+    header {
+        background-image: url(../img/FONDOheader.jpg);
+        width: 100%;
+        height: 270px;
+    }
+    .headerTitulo {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        .titulo {
+            font-size: 45px;
+            margin: 5px;
+        }
+        .textoTitulo {
+            font-size: 20px;
+        }
+    }
+    .card-body {
+        padding: 5px;
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+    }
+    footer {
+        height: 430px;
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+        .infoFooter{
+            font-size: 16px;
+        }
+    }
+
+    .imgFooter {
+        height: 50px;
+        width: 50px;
+        padding: 3px;
+    }
+}

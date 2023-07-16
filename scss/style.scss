@@ -1,35 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap');
+@import "pagSecundaria";
+@import "mediaqueries";
+
 /*valores*/
 $color:  #8dd4fd;
 $color-cards: #6faece;
 $color-fondo: #c7e7f5;
+$color-font: rgb(25, 24, 24);
 
 body {
     background-color: $color-fondo;
     font-family: 'Ysabeau Infant', sans-serif;
+    background: linear-gradient(to top, #00ddffb6, $color-fondo);
 }
-
-/* GO-TOP */
-.container-gotop {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    .button-GOTOP {
-        justify-content: center;
-        align-items: center;
-        border: none;
-        border-radius: 50%;
-        background-color: #79bbca;
-        width: 100px;
-        height: 100px;
-        a {
-            color: black;
-            width: 80px;
-            height: 70px;
-        }
-    }
-}
-
 /* PAGINA PRINCIPAL */
 /* HEADER */
 header {
@@ -44,7 +27,7 @@ header {
     display: flex;
     width: 100%;
     height: 100px;
-    text-align: right;
+    
 }
 .container-header{
     width: 100%;
@@ -58,17 +41,19 @@ header {
 }
 .ulnavbar {
     height: 90px;
-    justify-content: end;
-    align-items: end;
+    
     .nav-link {
         display: inline;
         height: 40px;
+        
         a {
             text-decoration: none;
-            font-size: 20px;
-            margin: 7px 7px 7px 7px;
-            padding: 20px 20px 20px 20px;
-            border-radius: 10px;
+        font-size: 20px;
+        margin: 10px 7;
+        padding: 20px;
+        border-radius: 10px;
+        justify-content: end;
+        align-items: end;
         }
 }
 }
@@ -91,44 +76,36 @@ header {
     width: 100%;
     height: 60px;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     font-size: 25px;
 }
 /* MAIN cards */
-#cards1 {
-    display: grid;
-    grid-template-columns: 570px 570px;
-    grid-template-rows: 500px 500px;
-    padding: 0;
-    margin: 0;
-}
-.card2{
-    margin: 10px;
-    padding: 0px;
-    height: 500px;
-    width: 500px;
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}    
+.card1{
+    background-color: $color-cards;
+    padding: 11px;
+    margin: 5px;
+    height: 450px;
+    width: 530px;
     a{
         text-decoration: none;
     }
 }
 .card-body{
-    width: 500px;
-    height: 420px;
-    margin: 9px; 
-    padding: 5px;
-    font-size: 20px;
-    background-color: $color-cards;
-    color: black;
-    
+    color: rgb(17, 16, 16);
+    margin: 0;
+    padding: 0;
+    .card-img {
+        width: 200px;
+        height: 200px;
+    }
 }
-.card-img {
-    width: 260px;
-    height: 200px;
-    margin: 10px;
 
-}
 /* FOOTER */
 footer {
     background-image: url(../img/FONDOheader.jpg);
@@ -138,14 +115,12 @@ footer {
     margin: 0;
     padding: 0;
 }
-
 .imgFooter {
     background-size: cover;
     height: 200px;
     width: 200px;
     padding: 3px;
 }
-
 .infoFooter {
     color: black;
     flex-direction: row;
@@ -156,177 +131,4 @@ footer {
     padding: 30px;
     font-size: 30px;
     
-}
-
-
-/* config texto completo pag2 */
-main {
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-}
-
-.textoCompleto {
-    padding: 100px;
-
-    ul {
-        list-style-type: none;
-        padding: 15px;
-    }
-}
-
-.tituloCompleto p {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-
-
-/* PAGINAS SECUNDARIAS */
-#header2 {
-    height: 100px;
-    margin: 0;
-    padding: 0;
-}
-
-.headerSecundario {
-    background-color: $color;
-    width: 100%;
-    height: 100px;
-}
-
-.buttonMenu {
-    display: none;
-}
-
-.h1-IMGpag2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.fondoHeader2 {
-    width: 700px;
-    height: 500px;
-    justify-content: center;
-}
-
-.tituloPAG2 {
-    font-size: 90px;
-    text-align: center;
-    margin: 0%;
-}
-
-
-
-/* @MEDIA QUERY 900*/
-@media screen and (max-width: 900px) {
-    header {
-        background-image: url(../img/FONDOheader.jpg);
-        width: 100%;
-    }
-    .headerTitulo {
-        height: 350px;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        .titulo {
-            font-size: 60px;
-            margin: 10px;
-        }
-        .textoTitulo {
-            font-size: 30px;
-        }
-    } 
-    .container-header {
-        width: 100%;
-        #navbarHeader {
-            display: none;
-            width: 100%;
-        }
-    }
-    .buttonMenu {
-        display: contents;
-        width: 100px;
-        height: 100px;
-        justify-content: end;
-        align-items: end;
-        .svg {
-            margin: 20px;
-            padding: 0;
-            width: 60px;
-            height: 60px;
-        }
-    }
-    #cards1 {
-        width: 100%;
-        height: 2000px;
-        display: flex;
-        flex-direction: column;
-    }
-    .card-body {
-        width: 100%;
-        height: 420px;
-        margin: 5px; 
-        padding: 5px;
-        font-size: 18px;
-            .button {
-                background-color: rgb(100, 100, 194);
-            }
-    }
-    footer {
-        height: 370px;
-        width: 100%;
-        padding: 10px;
-        margin: 0;
-    }
-
-    .imgFooter {
-        height: 50px;
-        width: 50px;
-        padding: 3px;
-    }
-}
-/* @MEDIA QUERY 450*/
-@media screen and (max-width: 450px) {
-    header {
-        background-image: url(../img/FONDOheader.jpg);
-        width: 100%;
-        height: 250px;
-    }
-    .headerTitulo {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        .titulo {
-            font-size: 45px;
-            margin: 5px;
-        }
-        .textoTitulo {
-            font-size: 20px;
-        }
-    }
-    .card-body {
-        padding: 5px;
-        flex-direction: row;
-        margin: 0;
-        width: 100%;
-    }
-    footer {
-        height: 430px;
-        width: 100%;
-        padding: 5px;
-        margin: 0;
-        .infoFooter{
-            font-size: 16px;
-        }
-    }
-
-    .imgFooter {
-        height: 50px;
-        width: 50px;
-        padding: 3px;
-    }
 }
