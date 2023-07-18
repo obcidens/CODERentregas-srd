@@ -5,21 +5,20 @@
 /*valores*/
 $color:  #8dd4fd;
 $color-cards: #6faece;
-$color-fondo: #c7e7f5;
-$color-font: rgb(25, 24, 24);
+$color-fondo: #ceffe0;
+$color-font: rgb(0, 0, 0);
+$color-footer:#0018cbd9;
 
 body {
-    background-color: $color-fondo;
     font-family: 'Ysabeau Infant', sans-serif;
-    background: linear-gradient(to top, #00ddffb6, $color-fondo);
+    background: linear-gradient(to bottom, #ceffe0, rgb(4, 15, 9));
 }
 /* PAGINA PRINCIPAL */
 /* HEADER */
 header {
-    background-image: url(../img/FONDOheader.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 550px;
+    background-image: url(../img/nature-g66d08018a_640.jpg);
+    background-size: 100%;
+    height: 500px;
     margin: 0;
     padding: 0;
 }
@@ -27,35 +26,34 @@ header {
     display: flex;
     width: 100%;
     height: 100px;
+    .container-header{
+        width: 100%;
+    }  
     
 }
-.container-header{
-    width: 100%;
-}   
 .LOGO {
-    float: left;
-    height: 100px;
-    width: 100px;
-    padding: 0;
-    margin: 10px 10px 0 15px;
-}
+        float: left;
+        height: 100px;
+        width: 100px;
+        padding: 0;
+        margin: 10px 10px 0 15px;
+    }
 .ulnavbar {
     height: 90px;
     
-    .nav-link {
-        display: inline;
-        height: 40px;
-        
-        a {
-            text-decoration: none;
+}
+.nav-link {
+    display: inline;
+    height: 40px;
+    a {
+        text-decoration: none;
         font-size: 20px;
         margin: 10px 7;
         padding: 20px;
         border-radius: 10px;
         justify-content: end;
         align-items: end;
-        }
-}
+    }
 }
 .buttonMenu {
     display: none;
@@ -66,40 +64,45 @@ header {
     color: black;
     .titulo {
         font-size: 100px;
-        
     }
     .textoTitulo {
         font-size: 30px;
     }
 }
 .divp {
-    width: 100%;
     height: 60px;
     padding: 0;
     margin: 10px;
     font-size: 25px;
 }
 /* MAIN cards */
+
 #cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}    
-.card1{
-    background-color: $color-cards;
-    padding: 11px;
-    margin: 5px;
-    height: 450px;
-    width: 530px;
-    a{
-        text-decoration: none;
-    }
+    .card1{
+        background: rgba(140, 192, 206, 0.872);
+        padding: 11px;
+        margin: 5px;
+        height: 250px;
+        width: 530px;
+        a{
+            text-decoration: none;
+            .iconoCARD{
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+        }
+    }    
 }
 .card-body{
-    color: rgb(17, 16, 16);
+    color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
+    font-size: 20px;
     .card-img {
         width: 200px;
         height: 200px;
@@ -108,27 +111,27 @@ header {
 
 /* FOOTER */
 footer {
-    background-image: url(../img/FONDOheader.jpg);
+    background-image: url(../img/FONDOfooter2.jpg);
     background-size: 100%;
     display: flex;
-    height: 410px;
+    height: 390px;
     margin: 0;
     padding: 0;
+    .infoFooter {
+        color: rgb(0, 0, 0);
+        flex-direction: row;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 30px;
+        font-size: 30px;
+        .imgFooter {
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            padding: 3px;
+        }
+    }
 }
-.imgFooter {
-    background-size: cover;
-    height: 200px;
-    width: 200px;
-    padding: 3px;
-}
-.infoFooter {
-    color: black;
-    flex-direction: row;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 30px;
-    font-size: 30px;
-    
-}
+
