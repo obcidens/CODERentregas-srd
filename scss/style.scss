@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap');
+@import "mixin";
 @import "pagSecundaria";
-@import "mediaqueries";
-
-/*valores*/
-$color:  #8dd4fd;
-$color-cards: #6faece;
-$color-fondo: #ceffe0;
-$color-font: rgb(0, 0, 0);
-$color-footer:#0018cbd9;
 
 body {
     font-family: 'Ysabeau Infant', sans-serif;
@@ -19,8 +12,7 @@ header {
     background-image: url(../img/nature-g66d08018a_640.jpg);
     background-size: 100%;
     height: 500px;
-    margin: 0;
-    padding: 0;
+    @include espacio0;
 }
 .navbar-header {
     display: flex;
@@ -40,21 +32,20 @@ header {
     }
 .ulnavbar {
     height: 90px;
-    
-}
-.nav-link {
-    display: inline;
-    height: 40px;
-    a {
-        text-decoration: none;
-        font-size: 20px;
-        margin: 10px 7;
-        padding: 20px;
-        border-radius: 10px;
-        justify-content: end;
-        align-items: end;
+    .nav-link {
+        display: inline;
+        height: 40px;
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            margin: 10px 7;
+            padding: 20px;
+            border-radius: 10px;
+            @include centroXY;
+        }
     }
 }
+
 .buttonMenu {
     display: none;
 }    
@@ -80,8 +71,7 @@ header {
 #cards-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include centroXY;
     .card1{
         background: rgba(140, 192, 206, 0.872);
         padding: 11px;
@@ -100,8 +90,7 @@ header {
 }
 .card-body{
     color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
+    @include espacio0;
     font-size: 20px;
     .card-img {
         width: 200px;
@@ -115,8 +104,7 @@ footer {
     background-size: 100%;
     display: flex;
     height: 390px;
-    margin: 0;
-    padding: 0;
+    @include espacio0;
     .infoFooter {
         color: rgb(0, 0, 0);
         flex-direction: row;
@@ -135,3 +123,174 @@ footer {
     }
 }
 
+/* @MEDIA QUERY 900*/
+@media screen and (max-width: 900px) {
+    header {
+        width: 100%;
+        height: 340px;
+        .headerTitulo {
+            @include centroXY;
+            height: 300px;
+            padding: 20px;
+            margin: 0;
+            .titulo {
+                font-size: 50px;
+                justify-content: center;
+            }
+            .textoTitulo {
+                font-size: 40px;
+            }
+        } 
+    }
+    .buttonMenu {
+        .buttonMenu {
+            display: flex;
+            align-items: center;
+            background-color: #5b52a7;
+            color: #000000;
+            padding: 10px;
+        }
+        .menu-btn {
+            cursor: pointer;
+        }
+        .hamburger,
+        .hamburger:before,
+        .hamburger:after {
+            content: "";
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 3px;
+            .hamburger:before {
+                margin-top: 6px;
+            }
+            
+            .hamburger:after {
+                margin-top: 6px;
+            }
+        }
+        .menu {
+            list-style: none;
+            display: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu li {
+            padding: 10px;
+        }
+        
+        .menu-btn:checked ~ .menu {
+            display: block;
+        }
+        
+    }
+    
+    .navbar-header {
+        width: 100%;
+        .ulnavbar{
+            display: none;
+            width: 100%;
+        }
+    }
+    #cards-container{
+        display: flex;
+        width: 100%;
+        .card1{
+            @include espacio0;
+            width: 100%;
+            margin-bottom: 6px;
+            height: 200px;
+            .card-body{
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+    footer {
+        height: 300px;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        .infoFooter{
+            font-size: 20px;
+        }
+        .imgFooter {
+            height: 50px;
+            width: 50px;
+            padding: 3px;
+        }
+    }
+    .navbar-header2 {
+        width: 100%;
+        .ulnavbar{
+            display: none;
+            width: 100%;
+        }
+    }
+    main2{
+        display: flex;
+        @include centroXY;
+        .titulo-pag2{
+            flex-direction: column;
+            @include espacio0;
+
+        }
+        .textoCompleto{
+            font-size: 40px;
+            .textpCONimg{
+                flex-direction: column;
+                .img-PAG2{
+                    float: none;
+                    width: 250px;
+                }
+            }
+        }
+    }
+    
+}
+/* @MEDIA QUERY 450*/
+@media screen and (max-width: 450px) {
+    header {
+        height: 240px;
+        .headerTitulo {
+            width: 100%;
+            @include espacio0;
+            @include centroXY;
+            .titulo {
+                font-size: 30px;
+                margin: 5px;
+            }
+            .textoTitulo {
+                font-size: 20px;
+            }
+        }
+    }
+    .navbar-header {
+        width: 100%;
+        .ulnavbar{
+            display: none;
+            width: 100%;
+        }
+    }
+    #cards-container{
+        .card1{
+            height: 300px;
+        }
+    }
+    footer {
+        height: 230px;
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+        .infoFooter{
+            font-size: 16px;
+            .imgFooter {
+                height: 70px;
+                width: 70px;
+                padding: 3px;
+            }
+        }
+    }
+}

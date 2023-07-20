@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap"); /* PAGINAS SECUNDARIAS */
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap"); /*valores*/ /* PAGINAS SECUNDARIAS */
 /* config texto completo pag2 */
 #body2 {
   font-size: 22px;
@@ -8,8 +8,8 @@
 
 #header2 {
   height: 100px;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   justify-content: center;
   align-items: center;
 }
@@ -25,8 +25,8 @@
 
 .titulo-pag2 {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 .titulo-pag2 .iconoPAG2 {
@@ -49,8 +49,10 @@
   margin-bottom: 0;
   color: black;
 }
-.textoCompleto li {
+.textoCompleto ul {
   list-style-type: none;
+  align-items: start;
+  justify-self: start;
 }
 
 .textoCONimg {
@@ -71,6 +73,12 @@
   padding: 0;
 }
 
+.textoINFO {
+  background-color: #88cba1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
 .tiposDEsuculentas {
   display: flex;
   flex-direction: column;
@@ -84,9 +92,10 @@
   background-image: url(../img/arbol-05\ \(1\).webp);
   background-size: 100%;
   display: flex;
-  height: 390px;
-  margin: 0;
-  padding: 0;
+  height: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #footer2 .imagenFOOTER {
   width: 100%;
@@ -119,125 +128,15 @@
   border: none;
   border-radius: 50%;
   background-color: rgba(73, 123, 194, 0.631);
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 .container-gotop .button-GOTOP a {
   color: black;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
-/* @MEDIA QUERY 900*/
-@media screen and (max-width: 900px) {
-  header {
-    background-image: url(../img/FONDOheader.jpg);
-    width: 100%;
-    background-color: blueviolet;
-  }
-  .headerTitulo {
-    height: 330px;
-    width: 100%;
-    padding: 20px;
-    margin: 0;
-  }
-  .headerTitulo .titulo {
-    font-size: 90px;
-    justify-content: center;
-  }
-  .headerTitulo .textoTitulo {
-    font-size: 30px;
-  }
-  .container-header {
-    width: 100%;
-  }
-  .container-header #navbarHeader {
-    display: none;
-    width: 100%;
-  }
-  .buttonMenu {
-    background-color: red;
-    display: contents;
-    width: 100px;
-    height: 100px;
-    justify-content: end;
-    align-items: end;
-  }
-  .buttonMenu .svg {
-    margin: 20px;
-    padding: 0;
-    width: 60px;
-    height: 60px;
-  }
-  #cards1 {
-    width: 100%;
-    height: 2000px;
-    display: flex;
-    flex-direction: column;
-  }
-  .card-body {
-    width: 100%;
-    height: 420px;
-    margin: 0;
-    padding: 5px;
-    font-size: 25px;
-  }
-  .card-body .button {
-    background-color: rgb(100, 100, 194);
-  }
-  footer {
-    height: 370px;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-  }
-  .imgFooter {
-    height: 50px;
-    width: 50px;
-    padding: 3px;
-  }
-}
-/* @MEDIA QUERY 450*/
-@media screen and (max-width: 450px) {
-  header {
-    background-image: url(../img/FONDOheader.jpg);
-    width: 100%;
-    height: 270px;
-  }
-  .headerTitulo {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .headerTitulo .titulo {
-    font-size: 45px;
-    margin: 5px;
-  }
-  .headerTitulo .textoTitulo {
-    font-size: 20px;
-  }
-  .card-body {
-    padding: 5px;
-    flex-direction: row;
-    margin: 0;
-    width: 100%;
-  }
-  footer {
-    height: 430px;
-    width: 100%;
-    padding: 5px;
-    margin: 0;
-  }
-  footer .infoFooter {
-    font-size: 16px;
-  }
-  .imgFooter {
-    height: 50px;
-    width: 50px;
-    padding: 3px;
-  }
-}
-/*valores*/
 body {
   font-family: "Ysabeau Infant", sans-serif;
   background: linear-gradient(to bottom, #ceffe0, rgb(4, 15, 9));
@@ -249,8 +148,8 @@ header {
   background-image: url(../img/nature-g66d08018a_640.jpg);
   background-size: 100%;
   height: 500px;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 .navbar-header {
@@ -273,19 +172,18 @@ header {
 .ulnavbar {
   height: 90px;
 }
-
-.nav-link {
+.ulnavbar .nav-link {
   display: inline;
   height: 40px;
 }
-.nav-link a {
+.ulnavbar .nav-link a {
   text-decoration: none;
   font-size: 20px;
   margin: 10px 7;
   padding: 20px;
   border-radius: 10px;
-  justify-content: end;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttonMenu {
@@ -336,8 +234,8 @@ header {
 
 .card-body {
   color: rgb(0, 0, 0);
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   font-size: 20px;
 }
 .card-body .card-img {
@@ -351,8 +249,8 @@ footer {
   background-size: 100%;
   display: flex;
   height: 390px;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 footer .infoFooter {
   color: rgb(0, 0, 0);
@@ -369,6 +267,177 @@ footer .infoFooter .imgFooter {
   height: 200px;
   width: 200px;
   padding: 3px;
+}
+
+/* @MEDIA QUERY 900*/
+@media screen and (max-width: 900px) {
+  header {
+    width: 100%;
+    height: 340px;
+  }
+  header .headerTitulo {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+    margin: 0;
+  }
+  header .headerTitulo .titulo {
+    font-size: 50px;
+    justify-content: center;
+  }
+  header .headerTitulo .textoTitulo {
+    font-size: 40px;
+  }
+  .buttonMenu .buttonMenu {
+    display: flex;
+    align-items: center;
+    background-color: #5b52a7;
+    color: #000000;
+    padding: 10px;
+  }
+  .buttonMenu .menu-btn {
+    cursor: pointer;
+  }
+  .buttonMenu .hamburger,
+  .buttonMenu .hamburger:before,
+  .buttonMenu .hamburger:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+  .buttonMenu .hamburger .hamburger:before,
+  .buttonMenu .hamburger:before .hamburger:before,
+  .buttonMenu .hamburger:after .hamburger:before {
+    margin-top: 6px;
+  }
+  .buttonMenu .hamburger .hamburger:after,
+  .buttonMenu .hamburger:before .hamburger:after,
+  .buttonMenu .hamburger:after .hamburger:after {
+    margin-top: 6px;
+  }
+  .buttonMenu .menu {
+    list-style: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  .buttonMenu .menu li {
+    padding: 10px;
+  }
+  .buttonMenu .menu-btn:checked ~ .menu {
+    display: block;
+  }
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-header .ulnavbar {
+    display: none;
+    width: 100%;
+  }
+  #cards-container {
+    display: flex;
+    width: 100%;
+  }
+  #cards-container .card1 {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    margin-bottom: 6px;
+    height: 200px;
+  }
+  #cards-container .card1 .card-body {
+    width: 100%;
+    padding: 10px;
+  }
+  footer {
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  footer .infoFooter {
+    font-size: 20px;
+  }
+  footer .imgFooter {
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+  }
+  .navbar-header2 {
+    width: 100%;
+  }
+  .navbar-header2 .ulnavbar {
+    display: none;
+    width: 100%;
+  }
+  main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main2 .titulo-pag2 {
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+  }
+  main2 .textoCompleto {
+    font-size: 40px;
+  }
+  main2 .textoCompleto .textpCONimg {
+    flex-direction: column;
+  }
+  main2 .textoCompleto .textpCONimg .img-PAG2 {
+    float: none;
+    width: 250px;
+  }
+}
+/* @MEDIA QUERY 450*/
+@media screen and (max-width: 450px) {
+  header {
+    height: 240px;
+  }
+  header .headerTitulo {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+  header .headerTitulo .titulo {
+    font-size: 30px;
+    margin: 5px;
+  }
+  header .headerTitulo .textoTitulo {
+    font-size: 20px;
+  }
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-header .ulnavbar {
+    display: none;
+    width: 100%;
+  }
+  #cards-container .card1 {
+    height: 300px;
+  }
+  footer {
+    height: 230px;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+  }
+  footer .infoFooter {
+    font-size: 16px;
+  }
+  footer .infoFooter .imgFooter {
+    height: 70px;
+    width: 70px;
+    padding: 3px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
